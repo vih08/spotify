@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Music</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form id="cadastroForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="usuario" placeholder="Usuário" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <input type="file" id="foto" accept="image/*" required>
+            <input type="submit" value="Cadastrar">
+        </form>
+        <button class="botao" onclick="window.location.href='file:///C:/Users/vitoria_silva18/Desktop/sim/simparte2/index.html'">Ir para o Spotify Clone</button>
+    </div>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Obter valores dos campos
+            const nome = document.getElementById('nome').value;
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+            const foto = document.getElementById('foto').files[0];
+
+            // Exibir dados no console
+            console.log('Nome:', nome);
+            console.log('Usuário:', usuario);
+            console.log('Senha:', senha);
+            console.log('Foto:', foto.name);
+
+            alert('Cadastro realizado com sucesso!');
+            // Aqui você pode adicionar lógica para enviar os dados para um servidor
+        });
+
+        <body>
+    <div style="flex-grow: 1;"></div> <!-- Para empurrar o footer para baixo -->
+    
+    <footer>
+        <iframe src="https://open.spotify.com/embed/track/SUA_TRACK_ID" 
+                allow="encrypted-media">
+        </iframe>
+    </footer>
+</body>
+
+    </script>
+</body>
+</html>
